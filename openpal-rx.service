@@ -1,0 +1,17 @@
+[Unit]
+Description=OpenPal RX - Digital image receiver for 70cm amateur radio
+After=network.target sound.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/openpal
+ExecStart=/usr/bin/python3 /home/pi/openpal/openpal_rx.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/pi/openpal/logs/rx.log
+StandardError=append:/home/pi/openpal/logs/rx.log
+
+[Install]
+WantedBy=multi-user.target
