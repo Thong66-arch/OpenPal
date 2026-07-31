@@ -61,6 +61,7 @@ KEEP_IMAGES     = 48    # keep last 48 images (8 hours at 10-min intervals)
 
 # Audio
 RX_AUDIO_DEVICE = None  # None = system default
+RX_TIMEOUT_S    =300
 WAV_ARCHIVE     = Path("/home/pi/openpal/wav_archive")
 WAV_ARCHIVE.mkdir(parents=True, exist_ok=True)
 KEEP_WAVS       = 10    # keep last 10 received WAV files for debugging

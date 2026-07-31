@@ -31,7 +31,7 @@ from scipy import signal as scipy_signal
 
 # ── Modem Parameters ─────────────────────────────────────────────────────────
 
-SAMPLE_RATE     = 8000       # Hz — universal sound card rate
+SAMPLE_RATE     = 44100      # Hz — universal sound card rate
 FREQ_LOW        = 300        # Hz — lowest carrier
 FREQ_HIGH       = 2700       # Hz — highest carrier
 NUM_CARRIERS    = 16         # number of OFDM sub-carriers
